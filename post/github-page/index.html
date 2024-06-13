@@ -142,9 +142,9 @@
 
                   
                   <span class="file-info-divider"></span>
-                  Modified <relative-time datetime="Fri, 14 Jun 2024 00:03:07 &#43;0800"
+                  Modified <relative-time datetime="Fri, 14 Jun 2024 00:05:15 &#43;0800"
                     class="no-wrap">
-                    Fri, 14 Jun 2024 00:03:07 &#43;0800</relative-time>
+                    Fri, 14 Jun 2024 00:05:15 &#43;0800</relative-time>
                   
                 </div>
               </div>
@@ -174,7 +174,7 @@
                         </div>
                       </div>
                     </details-menu>
-                      745 Words
+                      783 Words
                     
 
                   </div>
@@ -310,7 +310,14 @@ git push
 </code></pre><h1 id="setup-github-page">setup github page</h1>
 <p>in the github repository, click <code>settings &gt; pages</code>, the choose the <code>main</code> branch and enter <code>save</code>. After 2 minutes, it shows the link <code>https://username.github.io</code> on the top. Github finish deploy your webpage!</p>
 <p><img src="../images/github-page3.png" alt="3"></p>
-<h1 id="friendly-reminder">friendly reminder</h1>
+<h2 id="update-post">update post</h2>
+<p>adding a new post, you just need to deploy the project to update folder public/, then push the changes in public/ to github.</p>
+<pre tabindex="0"><code>hugo 
+cd public
+git add .
+git commit -m &#39;your comment&#39;
+git push
+</code></pre><h1 id="friendly-reminder">friendly reminder</h1>
 <blockquote>
 <p>use global for git to untracked the submodule <code>git config -f .gitmodules submodule.&lt;url&gt;.ignore untracked</code> if the submodule remain unchanged in this project</p>
 </blockquote>

@@ -1,0 +1,7 @@
+github-page:
+	- add new theme using same blog files
+	- automate using shell
+	
+intro git and github:
+
+

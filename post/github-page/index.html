@@ -142,9 +142,9 @@
 
                   
                   <span class="file-info-divider"></span>
-                  Modified <relative-time datetime="Fri, 14 Jun 2024 00:05:15 &#43;0800"
+                  Modified <relative-time datetime="Fri, 14 Jun 2024 00:22:47 &#43;0800"
                     class="no-wrap">
-                    Fri, 14 Jun 2024 00:05:15 &#43;0800</relative-time>
+                    Fri, 14 Jun 2024 00:22:47 &#43;0800</relative-time>
                   
                 </div>
               </div>
@@ -285,7 +285,7 @@ summary = &#34;Publish a personal webpage using Github Page and Hugo!&#34;
 </code></pre><h1 id="deploy">deploy</h1>
 <p>ofz, every programmers have their own github.</p>
 <p>Initalize a new repository, the name of repository must be <code>username.github.io</code>, where the <code>username</code> is your github name, otherwise, github cannot detect it.</p>
-<p><img src="../images/github-page1.png" alt="1">
+<p><img src="/images/github-page1.png" alt="1">
 using username as repository name, in other words, every github has 1 github page only</p>
 <h2 id="concept">concept</h2>
 <p>before you start to deploy, you need to understand what is the main structore in this repository.</p>
@@ -300,7 +300,7 @@ using username as repository name, in other words, every github has 1 github pag
 </code></pre><p>download the username.github.io as submodule and renamed it as public, because we only need to upload the HTML content to github, other <code>tools</code> are not needed</p>
 <pre tabindex="0"><code>git submodule add &lt;url&gt; public
 </code></pre><p><!-- raw HTML omitted -->, for my repo, <a href="mailto:git@github.com">git@github.com</a>:awepo-pro/awepo-pro.github.io.git
-<img src="../images/github-page2.png" alt="2"></p>
+<img src="/images/github-page2.png" alt="2"></p>
 <p>deploy the project to folder public by</p>
 <pre tabindex="0"><code>hugo 
 </code></pre><p>then, update the changes in folder with the basic git cmd</p>
@@ -309,7 +309,7 @@ git commit -m &#39;init&#39;
 git push
 </code></pre><h1 id="setup-github-page">setup github page</h1>
 <p>in the github repository, click <code>settings &gt; pages</code>, the choose the <code>main</code> branch and enter <code>save</code>. After 2 minutes, it shows the link <code>https://username.github.io</code> on the top. Github finish deploy your webpage!</p>
-<p><img src="../images/github-page3.png" alt="3"></p>
+<p><img src="/images/github-page3.png" alt="3"></p>
 <h2 id="update-post">update post</h2>
 <p>adding a new post, you just need to deploy the project to update folder public/, then push the changes in public/ to github.</p>
 <pre tabindex="0"><code>hugo 

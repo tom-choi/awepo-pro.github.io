@@ -1,18 +1,18 @@
 <?xml version="1.0" encoding="utf-8" standalone="yes"?>
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
-    <title>Emoji on HugoTeX</title>
-    <link>https://hugotex.vercel.app/tags/emoji/</link>
-    <description>Recent content in Emoji on HugoTeX</description>
+    <title>Emoji on PHL Blog</title>
+    <link>https://awepo-pro.github.io/tags/emoji/</link>
+    <description>Recent content in Emoji on PHL Blog</description>
     <generator>Hugo</generator>
     <language>en</language>
     <lastBuildDate>Tue, 05 Mar 2019 00:00:00 +0000</lastBuildDate>
-    <atom:link href="https://hugotex.vercel.app/tags/emoji/index.xml" rel="self" type="application/rss+xml" />
+    <atom:link href="https://awepo-pro.github.io/tags/emoji/index.xml" rel="self" type="application/rss+xml" />
     <item>
       <title>Emoji Support</title>
-      <link>https://hugotex.vercel.app/post/emoji-support/</link>
+      <link>https://awepo-pro.github.io/post/emoji-support/</link>
       <pubDate>Tue, 05 Mar 2019 00:00:00 +0000</pubDate>
-      <guid>https://hugotex.vercel.app/post/emoji-support/</guid>
+      <guid>https://awepo-pro.github.io/post/emoji-support/</guid>
       <description>&lt;p&gt;Emoji can be enabled in a Hugo project in a number of ways.&lt;/p&gt;</description>
     </item>
   </channel>

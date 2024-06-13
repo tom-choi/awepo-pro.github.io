@@ -1,18 +1,18 @@
 <?xml version="1.0" encoding="utf-8" standalone="yes"?>
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
-    <title>Tech on HugoTeX</title>
-    <link>https://hugotex.vercel.app/categories/tech/</link>
-    <description>Recent content in Tech on HugoTeX</description>
+    <title>Tech on PHL Blog</title>
+    <link>https://awepo-pro.github.io/categories/tech/</link>
+    <description>Recent content in Tech on PHL Blog</description>
     <generator>Hugo</generator>
     <language>en</language>
     <lastBuildDate>Thu, 13 Jun 2024 00:00:00 +0000</lastBuildDate>
-    <atom:link href="https://hugotex.vercel.app/categories/tech/index.xml" rel="self" type="application/rss+xml" />
+    <atom:link href="https://awepo-pro.github.io/categories/tech/index.xml" rel="self" type="application/rss+xml" />
     <item>
       <title>Brief Introduce Git and Github</title>
-      <link>https://hugotex.vercel.app/post/briefly-intro-git-and-github/</link>
+      <link>https://awepo-pro.github.io/post/briefly-intro-git-and-github/</link>
       <pubDate>Thu, 13 Jun 2024 00:00:00 +0000</pubDate>
-      <guid>https://hugotex.vercel.app/post/briefly-intro-git-and-github/</guid>
+      <guid>https://awepo-pro.github.io/post/briefly-intro-git-and-github/</guid>
       <description>intro git basic syntax Initialize git in a repository&#xA;cd REPOSITROY git init . </description>
     </item>
   </channel>

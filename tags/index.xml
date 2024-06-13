@@ -1,81 +1,81 @@
 <?xml version="1.0" encoding="utf-8" standalone="yes"?>
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
-    <title>Tags on HugoTeX</title>
-    <link>https://hugotex.vercel.app/tags/</link>
-    <description>Recent content in Tags on HugoTeX</description>
+    <title>Tags on PHL Blog</title>
+    <link>https://awepo-pro.github.io/tags/</link>
+    <description>Recent content in Tags on PHL Blog</description>
     <generator>Hugo</generator>
     <language>en</language>
     <lastBuildDate>Thu, 13 Jun 2024 00:00:00 +0000</lastBuildDate>
-    <atom:link href="https://hugotex.vercel.app/tags/index.xml" rel="self" type="application/rss+xml" />
+    <atom:link href="https://awepo-pro.github.io/tags/index.xml" rel="self" type="application/rss+xml" />
     <item>
       <title>Git</title>
-      <link>https://hugotex.vercel.app/tags/git/</link>
+      <link>https://awepo-pro.github.io/tags/git/</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
-      <guid>https://hugotex.vercel.app/tags/git/</guid>
+      <guid>https://awepo-pro.github.io/tags/git/</guid>
       <description></description>
     </item>
     <item>
       <title>Github</title>
-      <link>https://hugotex.vercel.app/tags/github/</link>
+      <link>https://awepo-pro.github.io/tags/github/</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
-      <guid>https://hugotex.vercel.app/tags/github/</guid>
+      <guid>https://awepo-pro.github.io/tags/github/</guid>
       <description></description>
     </item>
     <item>
       <title>Index</title>
-      <link>https://hugotex.vercel.app/tags/index/</link>
+      <link>https://awepo-pro.github.io/tags/index/</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
-      <guid>https://hugotex.vercel.app/tags/index/</guid>
+      <guid>https://awepo-pro.github.io/tags/index/</guid>
       <description></description>
     </item>
     <item>
       <title>Css</title>
-      <link>https://hugotex.vercel.app/tags/css/</link>
+      <link>https://awepo-pro.github.io/tags/css/</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
-      <guid>https://hugotex.vercel.app/tags/css/</guid>
+      <guid>https://awepo-pro.github.io/tags/css/</guid>
       <description></description>
     </item>
     <item>
       <title>Html</title>
-      <link>https://hugotex.vercel.app/tags/html/</link>
+      <link>https://awepo-pro.github.io/tags/html/</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
-      <guid>https://hugotex.vercel.app/tags/html/</guid>
+      <guid>https://awepo-pro.github.io/tags/html/</guid>
       <description></description>
     </item>
     <item>
       <title>Markdown</title>
-      <link>https://hugotex.vercel.app/tags/markdown/</link>
+      <link>https://awepo-pro.github.io/tags/markdown/</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
-      <guid>https://hugotex.vercel.app/tags/markdown/</guid>
+      <guid>https://awepo-pro.github.io/tags/markdown/</guid>
       <description></description>
     </item>
     <item>
       <title>Privacy</title>
-      <link>https://hugotex.vercel.app/tags/privacy/</link>
+      <link>https://awepo-pro.github.io/tags/privacy/</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
-      <guid>https://hugotex.vercel.app/tags/privacy/</guid>
+      <guid>https://awepo-pro.github.io/tags/privacy/</guid>
       <description></description>
     </item>
     <item>
       <title>Shortcodes</title>
-      <link>https://hugotex.vercel.app/tags/shortcodes/</link>
+      <link>https://awepo-pro.github.io/tags/shortcodes/</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
-      <guid>https://hugotex.vercel.app/tags/shortcodes/</guid>
+      <guid>https://awepo-pro.github.io/tags/shortcodes/</guid>
       <description></description>
     </item>
     <item>
       <title>Text</title>
-      <link>https://hugotex.vercel.app/tags/text/</link>
+      <link>https://awepo-pro.github.io/tags/text/</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
-      <guid>https://hugotex.vercel.app/tags/text/</guid>
+      <guid>https://awepo-pro.github.io/tags/text/</guid>
       <description></description>
     </item>
     <item>
       <title>Emoji</title>
-      <link>https://hugotex.vercel.app/tags/emoji/</link>
+      <link>https://awepo-pro.github.io/tags/emoji/</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
-      <guid>https://hugotex.vercel.app/tags/emoji/</guid>
+      <guid>https://awepo-pro.github.io/tags/emoji/</guid>
       <description></description>
     </item>
   </channel>

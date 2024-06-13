@@ -1,18 +1,18 @@
 <?xml version="1.0" encoding="utf-8" standalone="yes"?>
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
-    <title>Text on HugoTeX</title>
-    <link>https://hugotex.vercel.app/tags/text/</link>
-    <description>Recent content in Text on HugoTeX</description>
+    <title>Text on PHL Blog</title>
+    <link>https://awepo-pro.github.io/tags/text/</link>
+    <description>Recent content in Text on PHL Blog</description>
     <generator>Hugo</generator>
     <language>en</language>
     <lastBuildDate>Sat, 09 Mar 2019 00:00:00 +0000</lastBuildDate>
-    <atom:link href="https://hugotex.vercel.app/tags/text/index.xml" rel="self" type="application/rss+xml" />
+    <atom:link href="https://awepo-pro.github.io/tags/text/index.xml" rel="self" type="application/rss+xml" />
     <item>
       <title>Placeholder Text</title>
-      <link>https://hugotex.vercel.app/post/placeholder-text/</link>
+      <link>https://awepo-pro.github.io/post/placeholder-text/</link>
       <pubDate>Sat, 09 Mar 2019 00:00:00 +0000</pubDate>
-      <guid>https://hugotex.vercel.app/post/placeholder-text/</guid>
+      <guid>https://awepo-pro.github.io/post/placeholder-text/</guid>
       <description>&lt;p&gt;Lorem est tota propiore conpellat pectoribus de pectora summo.&lt;/p&gt;</description>
     </item>
   </channel>

@@ -10,7 +10,7 @@
     <link rel="stylesheet" href='https://awepo-pro.github.io/css/light.css' />
     <link rel="stylesheet" href='https://awepo-pro.github.io/css/dark.css' />
     <link rel="stylesheet" href='https://awepo-pro.github.io/css/syntax.css' />
-    <title>Github Page - Anton</title>
+    <title>Github Page and Hugo - Anton</title>
     
     <link rel="icon" type="image/x-icon" href='/images/github.png'>
     
@@ -18,7 +18,7 @@
 
     
     <meta name="description"
-  content="Publish a personal webpage using Github Page!" />
+  content="Publish a personal webpage using Github Page and Hugo!" />
 <meta name="keywords"
   content='blog' />
 <meta name="robots" content="noodp" />
@@ -26,9 +26,9 @@
 
 
 <meta name="twitter:card" content="summary" />
-<meta name="twitter:title" content="Github Page - Anton" />
+<meta name="twitter:title" content="Github Page and Hugo - Anton" />
 <meta name="twitter:description"
-  content="Publish a personal webpage using Github Page!" />
+  content="Publish a personal webpage using Github Page and Hugo!" />
 <meta name="twitter:site" content="https://awepo-pro.github.io/" />
 <meta name="twitter:creator" content="" />
 <meta name="twitter:image"
@@ -36,11 +36,11 @@
 
 
 <meta property="og:type" content="article" />
-<meta property="og:title" content="Github Page - Anton">
+<meta property="og:title" content="Github Page and Hugo - Anton">
 <meta property="og:description"
-  content="Publish a personal webpage using Github Page!" />
+  content="Publish a personal webpage using Github Page and Hugo!" />
 <meta property="og:url" content="https://awepo-pro.github.io/post/github-page/" />
-<meta property="og:site_name" content="Github Page" />
+<meta property="og:site_name" content="Github Page and Hugo" />
 <meta property="og:image"
   content="https://awepo-pro.github.io/">
 <meta property="og:image:width" content="2048">
@@ -132,7 +132,7 @@
                   </span>
                   <span class="path-divider">/</span>
                   <strong class="css-truncate css-truncate-target mr-1" style="max-width: 410px">
-                    <a href="https://awepo-pro.github.io/post/github-page/">Github Page</a>
+                    <a href="https://awepo-pro.github.io/post/github-page/">Github Page and Hugo</a>
                   </strong>
                 </h1>
                 <div class="note m-0">
@@ -142,9 +142,9 @@
 
                   
                   <span class="file-info-divider"></span>
-                  Modified <relative-time datetime="Thu, 13 Jun 2024 22:41:40 &#43;0800"
+                  Modified <relative-time datetime="Fri, 14 Jun 2024 00:03:07 &#43;0800"
                     class="no-wrap">
-                    Thu, 13 Jun 2024 22:41:40 &#43;0800</relative-time>
+                    Fri, 14 Jun 2024 00:03:07 &#43;0800</relative-time>
                   
                 </div>
               </div>
@@ -174,7 +174,7 @@
                         </div>
                       </div>
                     </details-menu>
-                      349 Words
+                      745 Words
                     
 
                   </div>
@@ -188,13 +188,14 @@
               <div class="Box-body px-5 pb-5" style="z-index: 1">
                 <article class="markdown-body entry-content container-lg"><h1 id="intro">intro</h1>
 <p>Normally, people cannot access your website if it is in localhost. By uisng Github Page, you can publich your own webpage (ie: blog). We use Hugo, which is a very popular building website framework, to build our website.</p>
-<h2 id="build-website">build website</h2>
+<h1 id="build-website">build website</h1>
 <p>Hugo is very simple, just considering it as PHP rewritten by Golang.</p>
 <p>First of all, choose a theme from this <a href="https://themes.gohugo.io/">website</a>, choose the desired one and follow the instruction inside the page</p>
 <blockquote>
 <p>in this example, we use <a href="https://themes.gohugo.io/themes/github-style/">this theme</a> as the structure is clear and standard</p>
 </blockquote>
-<p>to begin with, download hugo <a href="https://gohugo.io/installation/">see this</a>. then initialize a hugo site, in this case, called it <code>mysite</code></p>
+<p>to begin with, download hugo <a href="https://gohugo.io/installation/">see this</a>.</p>
+<p>then initialize a hugo site, in this case, called it <code>mysite</code></p>
 <pre tabindex="0"><code>hugo new site mysite
 cd mysite
 </code></pre><p>if you follow the instruction in the theme page, you will notice that you have not initalize the repository to git repository, therefore,</p>
@@ -204,7 +205,7 @@ cd mysite
 </code></pre><p>setup README</p>
 <pre tabindex="0"><code>hugo new README.md
 echo &#39;`hello world!`&#39; &gt; content/README.md 
-</code></pre><h3 id="config">config</h3>
+</code></pre><h2 id="config">config</h2>
 <p>hugo.md located at the root of the repository is the configuration file for the website, use the default config for testing</p>
 <pre tabindex="0"><code>baseURL = &#34;https://meik2333.com/&#34;
 languageCode = &#34;zh-cn&#34;
@@ -261,10 +262,60 @@ pygmentsUseClasses = true
 [services]
   [services.googleAnalytics]
     ID = &#34;UA-123456-789&#34;
-</code></pre><h2 id="run">run</h2>
+</code></pre><h1 id="testing">testing</h1>
 <pre tabindex="0"><code>hugo server -D
-</code></pre><p>the default webpage is http://localhost:1313, congratulation! if you successfully open it</p>
-</article>
+</code></pre><p>the default webpage is http://localhost:1313, congratulation, if you successfully open it!</p>
+<h2 id="add-new-post">add new post</h2>
+<p>create a new folder called <code>post</code> in content folder to store all the .md files</p>
+<pre tabindex="0"><code>cd content 
+mkdir post
+</code></pre><p>then back to the root, create a new post</p>
+<pre tabindex="0"><code>hugo new post/TITLE.md
+</code></pre><p>a .md files created in folder content/post with default header, for example</p>
+<pre tabindex="0"><code>+++
+title = &#39;Github Page and Hugo&#39;
+date = 2024-06-13T18:14:50+08:00
+draft = false
+summary = &#34;Publish a personal webpage using Github Page and Hugo!&#34;
++++
+</code></pre><p><code>draft = true</code> means reveal the post on the your website
+<code>summary</code>, the content that reveal in the small block on the first page</p>
+<p>use your favourite text editor to write the post, for example using VS Code</p>
+<pre tabindex="0"><code>code content/post/TITLE.md
+</code></pre><h1 id="deploy">deploy</h1>
+<p>ofz, every programmers have their own github.</p>
+<p>Initalize a new repository, the name of repository must be <code>username.github.io</code>, where the <code>username</code> is your github name, otherwise, github cannot detect it.</p>
+<p><img src="../images/github-page1.png" alt="1">
+using username as repository name, in other words, every github has 1 github page only</p>
+<h2 id="concept">concept</h2>
+<p>before you start to deploy, you need to understand what is the main structore in this repository.</p>
+<ul>
+<li>static &ndash; user&rsquo;s design (css, js&hellip;) files are all in this folders, but we use themes folder instead</li>
+<li>public &ndash; the main website folder, which is built by running the server (ie: hugo server, hugo server -D, hugo&hellip;). This is the final product of the project, we only need to use this to demonstrate the whole website, that means, other folders are just the <code>tools</code>.</li>
+<li>content &ndash; store all the contents revealed in the website, that the place that we add blog.</li>
+</ul>
+<h1 id="start-deploy">start deploy</h1>
+<p>remove the old folder public/</p>
+<pre tabindex="0"><code>rm -r public
+</code></pre><p>download the username.github.io as submodule and renamed it as public, because we only need to upload the HTML content to github, other <code>tools</code> are not needed</p>
+<pre tabindex="0"><code>git submodule add &lt;url&gt; public
+</code></pre><p><!-- raw HTML omitted -->, for my repo, <a href="mailto:git@github.com">git@github.com</a>:awepo-pro/awepo-pro.github.io.git
+<img src="../images/github-page2.png" alt="2"></p>
+<p>deploy the project to folder public by</p>
+<pre tabindex="0"><code>hugo 
+</code></pre><p>then, update the changes in folder with the basic git cmd</p>
+<pre tabindex="0"><code>git add .
+git commit -m &#39;init&#39;
+git push
+</code></pre><h1 id="setup-github-page">setup github page</h1>
+<p>in the github repository, click <code>settings &gt; pages</code>, the choose the <code>main</code> branch and enter <code>save</code>. After 2 minutes, it shows the link <code>https://username.github.io</code> on the top. Github finish deploy your webpage!</p>
+<p><img src="../images/github-page3.png" alt="3"></p>
+<h1 id="friendly-reminder">friendly reminder</h1>
+<blockquote>
+<p>use global for git to untracked the submodule <code>git config -f .gitmodules submodule.&lt;url&gt;.ignore untracked</code> if the submodule remain unchanged in this project</p>
+</blockquote>
+<pre tabindex="0"><code>git config -f .gitmodules submodule.themes/github-style.ignore untracked
+</code></pre></article>
               </div>
             </div>
           </div>

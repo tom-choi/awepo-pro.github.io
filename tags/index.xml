@@ -6,22 +6,8 @@
     <description>Recent content in Tags on HugoTeX</description>
     <generator>Hugo</generator>
     <language>en</language>
-    <lastBuildDate>Mon, 21 Jun 2021 00:00:00 +0000</lastBuildDate>
+    <lastBuildDate>Thu, 13 Jun 2024 00:00:00 +0000</lastBuildDate>
     <atom:link href="https://hugotex.vercel.app/tags/index.xml" rel="self" type="application/rss+xml" />
-    <item>
-      <title>Index</title>
-      <link>https://hugotex.vercel.app/tags/index/</link>
-      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
-      <guid>https://hugotex.vercel.app/tags/index/</guid>
-      <description></description>
-    </item>
-    <item>
-      <title>Css</title>
-      <link>https://hugotex.vercel.app/tags/css/</link>
-      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
-      <guid>https://hugotex.vercel.app/tags/css/</guid>
-      <description></description>
-    </item>
     <item>
       <title>Git</title>
       <link>https://hugotex.vercel.app/tags/git/</link>
@@ -34,6 +20,20 @@
       <link>https://hugotex.vercel.app/tags/github/</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
       <guid>https://hugotex.vercel.app/tags/github/</guid>
+      <description></description>
+    </item>
+    <item>
+      <title>Index</title>
+      <link>https://hugotex.vercel.app/tags/index/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      <guid>https://hugotex.vercel.app/tags/index/</guid>
+      <description></description>
+    </item>
+    <item>
+      <title>Css</title>
+      <link>https://hugotex.vercel.app/tags/css/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      <guid>https://hugotex.vercel.app/tags/css/</guid>
       <description></description>
     </item>
     <item>

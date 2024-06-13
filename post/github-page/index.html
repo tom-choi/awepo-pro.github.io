@@ -142,9 +142,9 @@
 
                   
                   <span class="file-info-divider"></span>
-                  Modified <relative-time datetime="Thu, 13 Jun 2024 18:47:27 &#43;0800"
+                  Modified <relative-time datetime="Thu, 13 Jun 2024 22:41:40 &#43;0800"
                     class="no-wrap">
-                    Thu, 13 Jun 2024 18:47:27 &#43;0800</relative-time>
+                    Thu, 13 Jun 2024 22:41:40 &#43;0800</relative-time>
                   
                 </div>
               </div>
@@ -174,7 +174,7 @@
                         </div>
                       </div>
                     </details-menu>
-                      53 Words
+                      349 Words
                     
 
                   </div>
@@ -190,6 +190,80 @@
 <p>Normally, people cannot access your website if it is in localhost. By uisng Github Page, you can publich your own webpage (ie: blog). We use Hugo, which is a very popular building website framework, to build our website.</p>
 <h2 id="build-website">build website</h2>
 <p>Hugo is very simple, just considering it as PHP rewritten by Golang.</p>
+<p>First of all, choose a theme from this <a href="https://themes.gohugo.io/">website</a>, choose the desired one and follow the instruction inside the page</p>
+<blockquote>
+<p>in this example, we use <a href="https://themes.gohugo.io/themes/github-style/">this theme</a> as the structure is clear and standard</p>
+</blockquote>
+<p>to begin with, download hugo <a href="https://gohugo.io/installation/">see this</a>. then initialize a hugo site, in this case, called it <code>mysite</code></p>
+<pre tabindex="0"><code>hugo new site mysite
+cd mysite
+</code></pre><p>if you follow the instruction in the theme page, you will notice that you have not initalize the repository to git repository, therefore,</p>
+<pre tabindex="0"><code>git init .
+</code></pre><p>install the theme as submodule into the folders themes</p>
+<pre tabindex="0"><code>git submodule add git@github.com:MeiK2333/github-style.git themes/github-style
+</code></pre><p>setup README</p>
+<pre tabindex="0"><code>hugo new README.md
+echo &#39;`hello world!`&#39; &gt; content/README.md 
+</code></pre><h3 id="config">config</h3>
+<p>hugo.md located at the root of the repository is the configuration file for the website, use the default config for testing</p>
+<pre tabindex="0"><code>baseURL = &#34;https://meik2333.com/&#34;
+languageCode = &#34;zh-cn&#34;
+title = &#34;MeiK&#39;s blog&#34;
+theme = &#34;github-style&#34;
+pygmentsCodeFences = true
+pygmentsUseClasses = true
+
+[params]
+  author = &#34;MeiK&#34;
+  description = &#34;In solitude, where we are least alone.&#34;
+  github = &#34;MeiK2333&#34;
+  facebook = &#34;MeiK2333&#34;
+  twitter = &#34;MeiK2333&#34;
+  linkedin = &#34;MeiK2333&#34;
+  instagram = &#34;MeiK2333&#34;
+  tumblr = &#34;MeiK2333&#34;
+  email = &#34;meik2333@gmail.com&#34;
+  url = &#34;https://meik2333.com&#34;
+  keywords = &#34;blog, google analytics&#34;
+  rss = true
+  lastmod = true
+  userStatusEmoji = &#34;😀&#34;
+  favicon = &#34;/images/github.png&#34;
+  avatar = &#34;/images/avatar.png&#34;
+  headerIcon = &#34;/images/GitHub-Mark-Light-32px.png&#34;
+  location = &#34;China&#34;
+  enableGitalk = true
+
+  [params.gitalk]
+    clientID = &#34;Your client ID&#34;
+    clientSecret = &#34;Your client secret&#34;
+    repo = &#34;repo&#34;
+    owner = &#34;MeiK2333&#34;
+    admin = &#34;MeiK2333&#34;
+    id = &#34;location.pathname&#34;
+    labels = &#34;gitalk&#34;
+    perPage = 15
+    pagerDirection = &#34;last&#34;
+    createIssueManually = true
+    distractionFreeMode = false
+
+  [[params.links]]
+    title = &#34;Link&#34;
+    href = &#34;https://github.com/meik2333&#34;
+  [[params.links]]
+    title = &#34;Link2&#34;
+    href = &#34;https://meik2333.com&#34;
+    icon = &#34;https://meik2333.com/images/avatar.png&#34;
+
+[frontmatter]
+  lastmod = [&#34;lastmod&#34;, &#34;:fileModTime&#34;, &#34;:default&#34;]
+
+[services]
+  [services.googleAnalytics]
+    ID = &#34;UA-123456-789&#34;
+</code></pre><h2 id="run">run</h2>
+<pre tabindex="0"><code>hugo server -D
+</code></pre><p>the default webpage is http://localhost:1313, congratulation! if you successfully open it</p>
 </article>
               </div>
             </div>

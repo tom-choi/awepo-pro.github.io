@@ -1,25 +1,25 @@
 <?xml version="1.0" encoding="utf-8" standalone="yes"?>
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
-    <title>MeiK&#39;s blog</title>
-    <link>https://meik2333.com/</link>
-    <description>Recent content on MeiK&#39;s blog</description>
+    <title>Anton</title>
+    <link>https://awepo-pro.github.io/</link>
+    <description>Recent content on Anton</description>
     <generator>Hugo</generator>
-    <language>zh-cn</language>
-    <lastBuildDate>Thu, 13 Jun 2024 18:20:54 +0800</lastBuildDate>
-    <atom:link href="https://meik2333.com/index.xml" rel="self" type="application/rss+xml" />
+    <language>en</language>
+    <lastBuildDate>Thu, 13 Jun 2024 18:47:27 +0800</lastBuildDate>
+    <atom:link href="https://awepo-pro.github.io/index.xml" rel="self" type="application/rss+xml" />
     <item>
       <title>Github Page</title>
-      <link>https://meik2333.com/post/github-page/</link>
+      <link>https://awepo-pro.github.io/post/github-page/</link>
       <pubDate>Thu, 13 Jun 2024 18:14:50 +0800</pubDate>
-      <guid>https://meik2333.com/post/github-page/</guid>
-      <description>Publish a personal webpage using Github Page!&#xA;intro Normally, people cannot access your website if it is in localhost. By uisng Github Page, you can publich your own webpage (ie: blog). We use Hugo, which is a very popular building website framework, to build our website.&#xA;build website Hugo is very simple, just considering it as PHP rewritten by Golang.</description>
+      <guid>https://awepo-pro.github.io/post/github-page/</guid>
+      <description>Publish a personal webpage using Github Page!</description>
     </item>
     <item>
       <title></title>
-      <link>https://meik2333.com/readme/</link>
+      <link>https://awepo-pro.github.io/readme/</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
-      <guid>https://meik2333.com/readme/</guid>
+      <guid>https://awepo-pro.github.io/readme/</guid>
       <description>Hello World!</description>
     </item>
   </channel>

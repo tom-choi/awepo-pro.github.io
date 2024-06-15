@@ -6,8 +6,15 @@
     <description>Recent content on Anton</description>
     <generator>Hugo</generator>
     <language>en</language>
-    <lastBuildDate>Fri, 14 Jun 2024 00:22:47 +0800</lastBuildDate>
+    <lastBuildDate>Sat, 15 Jun 2024 13:02:13 +0800</lastBuildDate>
     <atom:link href="https://awepo-pro.github.io/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>Yield From</title>
+      <link>https://awepo-pro.github.io/post/yield-from/</link>
+      <pubDate>Sat, 15 Jun 2024 12:29:58 +0800</pubDate>
+      <guid>https://awepo-pro.github.io/post/yield-from/</guid>
+      <description>new keyword &amp;lsquo;yield from&amp;rsquo; in python</description>
+    </item>
     <item>
       <title>Github Page and Hugo</title>
       <link>https://awepo-pro.github.io/post/github-page/</link>

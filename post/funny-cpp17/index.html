@@ -142,9 +142,9 @@
 
                   
                   <span class="file-info-divider"></span>
-                  Modified <relative-time datetime="Mon, 17 Jun 2024 00:26:18 &#43;0800"
+                  Modified <relative-time datetime="Mon, 17 Jun 2024 00:30:48 &#43;0800"
                     class="no-wrap">
-                    Mon, 17 Jun 2024 00:26:18 &#43;0800</relative-time>
+                    Mon, 17 Jun 2024 00:30:48 &#43;0800</relative-time>
                   
                 </div>
               </div>
@@ -174,7 +174,7 @@
                         </div>
                       </div>
                     </details-menu>
-                      376 Words
+                      381 Words
                     
 
                   </div>
@@ -274,7 +274,8 @@ else return `num`
 </span></span><span class="line"><span class="cl">
 </span></span><span class="line"><span class="cl">    <span class="n">printer</span><span class="p">(</span><span class="n">cout</span><span class="p">).</span><span class="n">println</span><span class="p">(</span><span class="s">&#34;hello&#34;</span><span class="p">,</span> <span class="s">&#34;world&#34;</span><span class="p">);</span>
 </span></span><span class="line"><span class="cl">
-</span></span><span class="line"><span class="cl">    <span class="n">printer</span><span class="p">(</span><span class="err">&#39;</span><span class="mf">123.</span><span class="n">txt</span><span class="err">&#39;</span><span class="p">).</span><span class="n">println</span><span class="p">(</span><span class="s">&#34;this is 123 txt file&#34;</span><span class="p">).</span><span class="n">println</span><span class="p">(</span><span class="s">&#34;ok&#34;</span><span class="p">);</span>
+</span></span><span class="line"><span class="cl">    <span class="n">ofstream</span> <span class="n">output</span><span class="p">(</span><span class="s">&#34;out.txt&#34;</span><span class="p">);</span>
+</span></span><span class="line"><span class="cl">    <span class="n">printer</span><span class="p">(</span><span class="n">output</span><span class="p">).</span><span class="n">println</span><span class="p">(</span><span class="s">&#34;this is 123 txt file&#34;</span><span class="p">,</span> <span class="s">&#34; hi dear&#34;</span><span class="p">).</span><span class="n">println</span><span class="p">(</span><span class="s">&#34;ok&#34;</span><span class="p">);</span>
 </span></span><span class="line"><span class="cl">
 </span></span><span class="line"><span class="cl">    <span class="k">return</span> <span class="mi">0</span><span class="p">;</span>
 </span></span><span class="line"><span class="cl"><span class="p">}</span>

@@ -142,9 +142,9 @@
 
                   
                   <span class="file-info-divider"></span>
-                  Modified <relative-time datetime="Mon, 17 Jun 2024 00:18:11 &#43;0800"
+                  Modified <relative-time datetime="Mon, 17 Jun 2024 00:26:18 &#43;0800"
                     class="no-wrap">
-                    Mon, 17 Jun 2024 00:18:11 &#43;0800</relative-time>
+                    Mon, 17 Jun 2024 00:26:18 &#43;0800</relative-time>
                   
                 </div>
               </div>
@@ -174,7 +174,7 @@
                         </div>
                       </div>
                     </details-menu>
-                      374 Words
+                      376 Words
                     
 
                   </div>
@@ -198,7 +198,7 @@
 </span></span><span class="line"><span class="cl">    <span class="n">cout</span> <span class="o">&lt;&lt;</span> <span class="n">h</span> <span class="o">&lt;&lt;</span> <span class="sc">&#39; &#39;</span><span class="p">;</span>
 </span></span><span class="line"><span class="cl">    <span class="n">println</span><span class="p">(</span><span class="n">t</span><span class="p">...);</span>
 </span></span><span class="line"><span class="cl"><span class="p">}</span>
-</span></span></code></pre></div><p>Perhaps you notice that this implementaion cannot redirect the output stream like the c++23 standard. However, it is easy to implement by using a wrapper<sup id="fnref:1"><a href="#fn:1" class="footnote-ref" role="doc-noteref">1</a></sup>.</p>
+</span></span></code></pre></div><p>Perhaps you notice that this implementaion cannot redirect the output stream like the c++23 standard. However, it is easy to implement by using a wrapper <a href="#redirecting-println">see bottom</a>.</p>
 <p>In c++17, the syntax is much shortened using fold expression</p>
 <div class="highlight"><pre tabindex="0" class="chroma"><code class="language-cpp" data-lang="cpp"><span class="line"><span class="cl"><span class="k">template</span><span class="o">&lt;</span><span class="k">typename</span><span class="p">...</span> <span class="n">Arg</span><span class="o">&gt;</span>
 </span></span><span class="line"><span class="cl"><span class="kt">void</span> <span class="n">println</span><span class="p">(</span><span class="n">Arg</span><span class="o">&amp;&amp;</span><span class="p">...</span> <span class="n">args</span><span class="p">)</span> <span class="p">{</span>
@@ -245,16 +245,17 @@
 </span></span><span class="line"><span class="cl"><span class="p">}</span>
 </span></span></code></pre></div><p>we use <code>{}</code> to indicate none in <code>std::optional</code>. However, we can also interchangeably use <code>std::nullopt</code>.</p>
 <h1 id="interesting-function-clamp">interesting function: clamp()</h1>
-<p>prototype: <code>int clamp(num, high, low)</code>
-if the <code>num</code> is greater than high, return high
-else if <code>num</code> is smaller than low, return low
-else return <code>num</code></p>
-<div class="highlight"><pre tabindex="0" class="chroma"><code class="language-cpp" data-lang="cpp"><span class="line"><span class="cl"><span class="kt">int</span> <span class="nf">main</span><span class="p">()</span> <span class="p">{</span>
+<p>prototype: <code>int clamp(num, high, low)</code></p>
+<pre tabindex="0"><code>if the `num` is greater than high, return high
+else if `num` is smaller than low, return low
+else return `num`
+</code></pre><div class="highlight"><pre tabindex="0" class="chroma"><code class="language-cpp" data-lang="cpp"><span class="line"><span class="cl"><span class="kt">int</span> <span class="nf">main</span><span class="p">()</span> <span class="p">{</span>
 </span></span><span class="line"><span class="cl">    <span class="n">println</span><span class="p">(</span><span class="n">clamp</span><span class="p">(</span><span class="mi">7</span><span class="p">,</span> <span class="mi">10</span><span class="p">,</span> <span class="mi">50</span><span class="p">));</span>      <span class="c1">// 10
 </span></span></span><span class="line"><span class="cl"><span class="c1"></span>    <span class="n">println</span><span class="p">(</span><span class="n">clamp</span><span class="p">(</span><span class="mi">40</span><span class="p">,</span> <span class="mi">3</span><span class="p">,</span> <span class="mi">100</span><span class="p">));</span>     <span class="c1">// 40
 </span></span></span><span class="line"><span class="cl"><span class="c1"></span>    <span class="n">println</span><span class="p">(</span><span class="n">clamp</span><span class="p">(</span><span class="mi">200</span><span class="p">,</span> <span class="mi">5</span><span class="p">,</span> <span class="mi">46</span><span class="p">));</span>     <span class="c1">// 46
 </span></span></span><span class="line"><span class="cl"><span class="c1"></span><span class="p">}</span>
-</span></span></code></pre></div><div class="highlight"><pre tabindex="0" class="chroma"><code class="language-cpp" data-lang="cpp"><span class="line"><span class="cl"><span class="k">class</span> <span class="nc">printer</span> <span class="p">{</span>
+</span></span></code></pre></div><h1 id="redirecting-println">redirecting println</h1>
+<div class="highlight"><pre tabindex="0" class="chroma"><code class="language-cpp" data-lang="cpp"><span class="line"><span class="cl"><span class="k">class</span> <span class="nc">printer</span> <span class="p">{</span>
 </span></span><span class="line"><span class="cl"><span class="k">private</span><span class="o">:</span>
 </span></span><span class="line"><span class="cl">    <span class="n">ostream</span> <span class="o">&amp;</span><span class="n">stdos</span><span class="p">;</span>
 </span></span><span class="line"><span class="cl">
@@ -277,15 +278,7 @@ else return <code>num</code></p>
 </span></span><span class="line"><span class="cl">
 </span></span><span class="line"><span class="cl">    <span class="k">return</span> <span class="mi">0</span><span class="p">;</span>
 </span></span><span class="line"><span class="cl"><span class="p">}</span>
-</span></span></code></pre></div><div class="footnotes" role="doc-endnotes">
-<hr>
-<ol>
-<li id="fn:1">
-<p>redirecting println&#160;<a href="#fnref:1" class="footnote-backref" role="doc-backlink">&#x21a9;&#xfe0e;</a></p>
-</li>
-</ol>
-</div>
-</article>
+</span></span></code></pre></div></article>
               </div>
             </div>
           </div>
